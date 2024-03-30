@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    background-color: #50b3a2;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+  }
+  
+  h2 {
+    background-color: #28a7a3;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  form {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 35rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    padding: 0.5rem;
+    width: calc(100% - 16px); /* Decreased width to accommodate reduced spacing */
+    margin-bottom: -25px; /* Decreased margin for reduced spacing */
+    line-height: 1.5; 
+    cursor: text;
+
+  }
+  
+  button[type="submit"] {
+    background-color: #50b3a2;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #409a8c;
+  }
+  
+  form button[type="submit"]:focus {
+    outline: none;
+  }
+  
+  form input[type="text"]:hover,
+  form input[type="email"]:hover,
+  form input[type="tel"]:hover,
+  form input[type="number"]:hover {
+    border-color: #50b3a2;
+  }
+  

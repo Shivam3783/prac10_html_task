@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@cloudant/cloudant": "^4.5.1",
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2"
+  }
+}

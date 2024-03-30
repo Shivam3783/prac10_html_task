@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>User Management</h1>
+
+    <!-- Insert User Form -->
+    <h2>Add New User</h2>
+    <form id="insertForm" action="http://localhost:7070/api/user" method="POST">
+        <label for="insertId">User ID:</label>
+        <input type="number" id="insertId" name="_id" required><br><br>
+
+        <label for="insertName">Name:</label>
+        <input type="text" id="insertName" name="name" required><br><br>
+
+        <label for="insertEmail">Email:</label>
+        <input type="email" id="insertEmail" name="email" required><br><br>
+
+        <label for="insertPhone">Phone:</label>
+        <input type="tel" id="insertPhone" name="phone" required><br><br>
+
+        <label for="insertCity">City:</label>
+        <input type="text" id="insertCity" name="city"><br><br>
+
+        <label for="insertCountry">Country:</label>
+        <input type="text" id="insertCountry" name="country"><br><br>
+
+        <label for="insertPincode">Pincode:</label>
+        <input type="text" id="insertPincode" name="pincode"><br><br>
+
+        <button type="submit">Add User</button>
+    </form>
+
+    <!-- Update User Form -->
+    <h2>Update User Data</h2>
+    <form id="updateForm" action="http://localhost:7070/api/update" method="POST">
+        <label for="updateId">User ID:</label>
+        <input type="number" id="updateId" name="_id" required><br><br>
+
+        <label for="updateRevId">Revision ID:</label>
+        <input type="text" id="updateRevId" name="_rev" required><br><br>
+
+        <label for="updateName">Name:</label>
+        <input type="text" id="updateName" name="name"><br><br>
+
+        <label for="updateEmail">Email:</label>
+        <input type="email" id="updateEmail" name="email"><br><br>
+
+        <label for="updatePhone">Phone:</label>
+        <input type="tel" id="updatePhone" name="phone"><br><br>
+
+        <label for="updateCity">City:</label>
+        <input type="text" id="updateCity" name="city"><br><br>
+
+        <label for="updateCountry">Country:</label>
+        <input type="text" id="updateCountry" name="country"><br><br>
+
+        <label for="updatePincode">Pincode:</label>
+        <input type="text" id="updatePincode" name="pincode"><br><br>
+
+        <button type="submit">Update User Data</button>
+    </form>
+
+    <h2>Delete User Data</h2>
+    <form id="deleteForm" action="http://localhost:7070/api/delete" method="POST">
+        <label for="deleteId">Document ID:</label>
+        <input type="text" id="deleteId" name="id" required><br><br>
+        
+        <label for="deleteRev">Revision ID:</label>
+        <input type="text" id="deleteRev" name="rev" required><br><br>
+    
+        <button type="submit">Delete Document</button>
+    </form>
+
+    <!-- Get All Users Form -->
+    <h2>Get All Users Data</h2>
+    <form id="getAllForm" action="http://localhost:7070/api/all" method="GET">
+        <button type="submit">Get All Users Data</button>
+    </form>
+</body>
+</html>
